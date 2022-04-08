@@ -53,7 +53,7 @@ export default function Register() {
                     Password:
                     <input type="text" name="name" onChange={(e) => setPassword(e.target.value)} value={password} /><br />
                 </label>
-                <input type="submit" value="Submit" onClick={handleClick} />
+                <input type="submit" value="Register" onClick={handleClick} />
             </form>
         </div>
     )

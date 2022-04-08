@@ -22,7 +22,7 @@ export default function Login() {
             // 4. else display error message  
             .catch(function (ex) {
                 if (ex.response && ex.response.status === 400) {
-                    console.log( ex.response.data);
+                    console.log(ex.response.data);
                 }
             });
 
@@ -41,7 +41,7 @@ export default function Login() {
                     Password:
                     <input type="text" name="name" onChange={(e) => setPassword(e.target.value)} value={password} /><br />
                 </label>
-                <input type="submit" value="Submit" onClick={handleClick} />
+                <input type="submit" value="Login" onClick={handleClick} />
             </form>
         </div>
     )
